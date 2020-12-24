@@ -1,3 +1,10 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/senpo/maven_install
+gazelle(
+    name = "gazelle",
+)
+
 exports_files(
     ["maven_install.json"],
 )
